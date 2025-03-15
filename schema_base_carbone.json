@@ -1,0 +1,719 @@
+[
+    {
+        "key": "Type_Ligne",
+        "x-originalName": "Type Ligne",
+        "type": "string",
+        "x-cardinality": 2,
+        "description": "",
+        "enum": [
+            "Elément",
+            "Poste"
+        ],
+        "label": "Type Ligne"
+    },
+    {
+        "key": "Identifiant_de_l'élément",
+        "x-originalName": "Identifiant de l'élément",
+        "type": "string",
+        "x-cardinality": 12105,
+        "description": "",
+        "x-refersTo": "http://www.w3.org/2000/01/rdf-schema#label",
+        "x-concept": {
+            "id": "label",
+            "title": "Libellé",
+            "primary": true
+        },
+        "x-capabilities": {
+            "textAgg": true
+        },
+        "label": "Identifiant de l'élément"
+    },
+    {
+        "key": "Structure",
+        "x-originalName": "Structure",
+        "type": "string",
+        "x-cardinality": 4,
+        "description": "",
+        "enum": [
+            "élément non décomposé",
+            "élément décomposé par poste et par gaz",
+            "élément décomposé par poste",
+            "élément décomposé par gaz"
+        ],
+        "label": "Structure"
+    },
+    {
+        "key": "Type_de_l'élément",
+        "x-originalName": "Type de l'élément",
+        "type": "string",
+        "x-cardinality": 2,
+        "description": "",
+        "enum": [
+            "Facteur d'émission",
+            "Données source"
+        ],
+        "label": "Type de l'élément"
+    },
+    {
+        "key": "Statut_de_l'élément",
+        "x-originalName": "Statut de l'élément",
+        "type": "string",
+        "x-cardinality": 7,
+        "description": "",
+        "enum": [
+            "Valide générique",
+            "Archivé",
+            "Valide spécifique",
+            "Refusé",
+            "Supprimé",
+            "En brouillon",
+            "En discussion"
+        ],
+        "label": "Statut de l'élément"
+    },
+    {
+        "key": "Nom_base_français",
+        "x-originalName": "Nom base français",
+        "type": "string",
+        "x-cardinality": 2882,
+        "description": "",
+        "label": "Nom base français"
+    },
+    {
+        "key": "Nom_base_anglais",
+        "x-originalName": "Nom base anglais",
+        "type": "string",
+        "x-cardinality": 2536,
+        "description": "",
+        "label": "Nom base anglais"
+    },
+    {
+        "key": "Nom_base_espagnol",
+        "x-originalName": "Nom base espagnol",
+        "type": "string",
+        "x-cardinality": 26,
+        "description": "",
+        "label": "Nom base espagnol"
+    },
+    {
+        "key": "Nom_attribut_français",
+        "x-originalName": "Nom attribut français",
+        "type": "string",
+        "x-cardinality": 3705,
+        "description": "",
+        "label": "Nom attribut français"
+    },
+    {
+        "key": "Nom_attribut_anglais",
+        "x-originalName": "Nom attribut anglais",
+        "type": "string",
+        "x-cardinality": 3759,
+        "description": "",
+        "label": "Nom attribut anglais"
+    },
+    {
+        "key": "Nom_attribut_espagnol",
+        "x-originalName": "Nom attribut espagnol",
+        "type": "string",
+        "x-cardinality": 3,
+        "description": "",
+        "label": "Nom attribut espagnol"
+    },
+    {
+        "key": "Nom_frontière_français",
+        "x-originalName": "Nom frontière français",
+        "type": "string",
+        "x-cardinality": 917,
+        "description": "",
+        "label": "Nom frontière français"
+    },
+    {
+        "key": "Nom_frontière_anglais",
+        "x-originalName": "Nom frontière anglais",
+        "type": "string",
+        "x-cardinality": 762,
+        "description": "",
+        "label": "Nom frontière anglais"
+    },
+    {
+        "key": "Code_de_la_catégorie",
+        "x-originalName": "Code de la catégorie",
+        "type": "string",
+        "x-cardinality": 400,
+        "description": "",
+        "label": "Code de la catégorie"
+    },
+    {
+        "key": "Tags_français",
+        "x-originalName": "Tags français",
+        "type": "string",
+        "x-cardinality": 5973,
+        "description": "",
+        "label": "Tags français"
+    },
+    {
+        "key": "Tags_anglais",
+        "x-originalName": "Tags anglais",
+        "type": "string",
+        "x-cardinality": 5086,
+        "description": "",
+        "label": "Tags anglais"
+    },
+    {
+        "key": "Tags_espagnol",
+        "x-originalName": "Tags espagnol",
+        "type": "string",
+        "x-cardinality": 1,
+        "description": "",
+        "label": "Tags espagnol"
+    },
+    {
+        "key": "Unité_français",
+        "x-originalName": "Unité français",
+        "type": "string",
+        "x-cardinality": 103,
+        "description": "",
+        "label": "Unité français"
+    },
+    {
+        "key": "Unité_anglais",
+        "x-originalName": "Unité anglais",
+        "type": "string",
+        "x-cardinality": 102,
+        "description": "",
+        "label": "Unité anglais"
+    },
+    {
+        "key": "Contributeur",
+        "x-originalName": "Contributeur",
+        "type": "string",
+        "x-cardinality": 16,
+        "description": "",
+        "enum": [
+            "ADEME",
+            "ACTA CONSULT",
+            "Quantis",
+            "TEST ALTRAN",
+            "DREAL AUVERGNE",
+            "Solving Efeso",
+            "GEO",
+            "NULL",
+            "RATP",
+            "GEOCIAM",
+            "World Benchmarking Alliance",
+            "AP Portage",
+            "ECO2 Initiative",
+            "AJYR",
+            "Energies-demain",
+            "Kohler Europe - Jacob Delafon"
+        ],
+        "label": "Contributeur"
+    },
+    {
+        "key": "Autres_Contributeurs",
+        "x-originalName": "Autres Contributeurs",
+        "type": "string",
+        "x-cardinality": 7,
+        "description": "",
+        "label": "Autres Contributeurs"
+    },
+    {
+        "key": "Programme",
+        "x-originalName": "Programme",
+        "type": "string",
+        "x-cardinality": 21,
+        "description": "",
+        "enum": [
+            "AGRIBALYSE 3.1",
+            "AGRIBALYSE",
+            "OEET",
+            "DPE -  Arrêté du 21 octobre 2021",
+            "DPE - arrêté 11 avril 2018",
+            "6ème rapport du GIEC (2023)",
+            "ALDO",
+            "CO2 emissions from fuel combustion - hightlights",
+            "CO2 emissions from fuel combustion - hightlights 2013",
+            "4ème rapport du GIEC",
+            "5ème rapport du GIEC",
+            "Base IMPACT",
+            "Bilan environnemental du chauffage domestique au bois",
+            "GESTIM",
+            "PEBN",
+            "Bilan environnemental du chauffage collectif (avec réseau de chaleur) et industriel au bois",
+            "guide sectoriel eau et assainissement",
+            "GES'TIM +",
+            "Projet Oasis",
+            "EU-ETS",
+            "expérimentation HQE Performance"
+        ],
+        "label": "Programme"
+    },
+    {
+        "key": "Url_du_programme",
+        "x-originalName": "Url du programme",
+        "type": "string",
+        "x-cardinality": 23,
+        "description": "",
+        "enum": [
+            "https://agribalyse.ademe.fr/app",
+            "https://app.agribalyse.fr/",
+            "http://www2.ademe.fr/servlet/KBaseShow?sort=-1&cid=96&m=3&catid=25282",
+            "https://reseaux-chaleur.cerema.fr/espace-documentaire/dpe-des-reseaux-chaleur-et-froid-en-France",
+            "http://reseaux-chaleur.cerema.fr/contenus-co2-des-reseaux-de-chaleur-et-de-froid-arrete-du-11-avril-",
+            "https://www.ademe.fr/modelisation-evaluation-poids-carbone-produits-consommation-biens-dequipement",
+            "http://www.iea.org/statistics/topics/co2emissions/",
+            "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_07_Supplementary_Material.p",
+            "https://www.territoires-climat.ademe.fr/actualite/loutil-aldo-pour-une-premiere-estimation-de-la-seq",
+            "https://www.ademe.fr/modelisation-evaluation-environnementale-produits-consommation-biens-dequipemen",
+            "http://www.ipcc.ch/publications_and_data/ar4/wg1/en/ch2s2-10-2.html",
+            "http://www.ipcc.ch/report/ar5/wg1/",
+            "https://librairie.ademe.fr/energies-renouvelables-reseaux-et-stockage/5214-analyse-du-cycle-de-vie-d",
+            "http://www.base-impacts.ademe.fr/",
+            "http://www2.ademe.fr/servlet/getDoc?cid=96&m=3&id=34702&p1=02&p2=08&ref=17597",
+            "http://www.batiment-energiecarbone.fr/",
+            "http://www2.ademe.fr/servlet/getDoc?cid=96&m=3&id=34701&p1=02&p2=09&ref=17597",
+            "http://www.astee.org/site/wp-content/uploads/2014/06/Guide_GES_fr_VF_2013.pdf",
+            "https://www.arvalisinstitutduvegetal.fr/ges-tim-@/view-3049-arvstatiques.html",
+            "https://www.colibris-lemouvement.org/ensemble/le-projet-oasis",
+            "http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000026702697&dateTexte=&categorieLien=",
+            "http://assohqe.org/hqe/IMG/pdf/14-027_HQEPerf_RapportPrincipal_VF.pdf",
+            "www.edf.fr/cycle-de-vie-kWH-nucleaire"
+        ],
+        "label": "Url du programme"
+    },
+    {
+        "key": "Source",
+        "x-originalName": "Source",
+        "type": "string",
+        "x-cardinality": 51,
+        "description": "",
+        "label": "Source"
+    },
+    {
+        "key": "Localisation_géographique",
+        "x-originalName": "Localisation géographique",
+        "type": "string",
+        "x-cardinality": 5,
+        "description": "",
+        "enum": [
+            "France continentale",
+            "Outre-mer",
+            "Monde",
+            "Autre pays du monde",
+            "Europe"
+        ],
+        "label": "Localisation géographique"
+    },
+    {
+        "key": "Sous-localisation_géographique_français",
+        "x-originalName": "Sous-localisation géographique français",
+        "type": "string",
+        "x-cardinality": 1377,
+        "description": "",
+        "label": "Sous-localisation géographique français"
+    },
+    {
+        "key": "Sous-localisation_géographique_anglais",
+        "x-originalName": "Sous-localisation géographique anglais",
+        "type": "string",
+        "x-cardinality": 1411,
+        "description": "",
+        "label": "Sous-localisation géographique anglais"
+    },
+    {
+        "key": "Sous-localisation_géographique_espagnol",
+        "x-originalName": "Sous-localisation géographique espagnol",
+        "type": "string",
+        "x-cardinality": 1,
+        "description": "",
+        "label": "Sous-localisation géographique espagnol"
+    },
+    {
+        "key": "Date_de_création",
+        "x-originalName": "Date de création",
+        "type": "string",
+        "x-capabilities": {
+            "textAgg": false
+        },
+        "x-cardinality": 71,
+        "description": "",
+        "format": "date",
+        "label": "Date de création"
+    },
+    {
+        "key": "Date_de_modification",
+        "x-originalName": "Date de modification",
+        "type": "string",
+        "x-capabilities": {
+            "textAgg": false
+        },
+        "x-cardinality": 90,
+        "description": "",
+        "format": "date",
+        "label": "Date de modification"
+    },
+    {
+        "key": "Période_de_validité",
+        "x-originalName": "Période de validité",
+        "type": "string",
+        "x-cardinality": 71,
+        "description": "",
+        "label": "Période de validité"
+    },
+    {
+        "key": "Incertitude",
+        "x-originalName": "Incertitude",
+        "type": "integer",
+        "x-cardinality": 29,
+        "description": "",
+        "enum": [
+            30,
+            50,
+            5,
+            20,
+            10,
+            70,
+            60,
+            15,
+            25,
+            100,
+            80,
+            40,
+            22,
+            14,
+            16,
+            18,
+            400,
+            11,
+            19,
+            26,
+            13,
+            24,
+            29,
+            44,
+            12,
+            35,
+            75,
+            33,
+            45
+        ],
+        "label": "Incertitude"
+    },
+    {
+        "key": "Réglementations",
+        "x-originalName": "Réglementations",
+        "type": "string",
+        "x-cardinality": 7,
+        "description": "",
+        "enum": [
+            "DonnÃ©es de l'article L229-25 de la loi TECV",
+            "DonnÃ©es de l'article L229-25 de la loi TECV, DonnÃ©es de l'article L1431.3 du code des transports",
+            "DonnÃ©es de l'article L229-25 de la loi TECV, DonnÃ©es de l'EU Emissions Trading System (EU ETS)",
+            "ExpÃ©rimentation du label E+/C-",
+            "DonnÃ©es de l'article L229-25 de la loi TECV, DonnÃ©es de l'EU Emissions Trading System (EU ETS), DonnÃ©es de l'article L1431.3 du code des transports",
+            "RÃ©glementation Test",
+            "DonnÃ©es de l'article L1431.3 du code des transports"
+        ],
+        "label": "Réglementations"
+    },
+    {
+        "key": "Transparence",
+        "x-originalName": "Transparence",
+        "type": "number",
+        "x-cardinality": 5,
+        "description": "",
+        "enum": [
+            5,
+            4,
+            3,
+            4.5,
+            2
+        ],
+        "label": "Transparence"
+    },
+    {
+        "key": "Qualité",
+        "x-originalName": "Qualité",
+        "type": "number",
+        "x-cardinality": 36,
+        "description": "",
+        "label": "Qualité"
+    },
+    {
+        "key": "Qualité_TeR",
+        "x-originalName": "Qualité TeR",
+        "type": "integer",
+        "x-cardinality": 6,
+        "description": "",
+        "enum": [
+            4,
+            5,
+            0,
+            3,
+            2,
+            1
+        ],
+        "label": "Qualité TeR"
+    },
+    {
+        "key": "Qualité_GR",
+        "x-originalName": "Qualité GR",
+        "type": "integer",
+        "x-cardinality": 6,
+        "description": "",
+        "label": "Qualité GR"
+    },
+    {
+        "key": "Qualité_TiR",
+        "x-originalName": "Qualité TiR",
+        "type": "integer",
+        "x-cardinality": 6,
+        "description": "",
+        "label": "Qualité TiR"
+    },
+    {
+        "key": "Qualité_C",
+        "x-originalName": "Qualité C",
+        "type": "integer",
+        "x-cardinality": 6,
+        "description": "",
+        "label": "Qualité C"
+    },
+    {
+        "key": "Qualité_P",
+        "x-originalName": "Qualité P",
+        "type": "integer",
+        "x-cardinality": 6,
+        "description": "",
+        "label": "Qualité P"
+    },
+    {
+        "key": "Qualité_M",
+        "x-originalName": "Qualité M",
+        "type": "integer",
+        "x-cardinality": 6,
+        "description": "",
+        "label": "Qualité M"
+    },
+    {
+        "key": "Commentaire_français",
+        "x-originalName": "Commentaire français",
+        "type": "string",
+        "x-display": "textarea",
+        "x-capabilities": {
+            "index": false,
+            "values": false,
+            "insensitive": false
+        },
+        "description": "",
+        "label": "Commentaire français"
+    },
+    {
+        "key": "Commentaire_anglais",
+        "x-originalName": "Commentaire anglais",
+        "type": "string",
+        "x-display": "textarea",
+        "x-capabilities": {
+            "index": false,
+            "values": false,
+            "insensitive": false
+        },
+        "description": "",
+        "label": "Commentaire anglais"
+    },
+    {
+        "key": "Type_poste",
+        "x-originalName": "Type poste",
+        "type": "string",
+        "x-cardinality": 16,
+        "description": "",
+        "enum": [
+            "Amont",
+            "Combustion",
+            "Combustion à la centrale",
+            "Transport et distribution",
+            "Energie",
+            "Fabrication",
+            "Transport",
+            "Intrants",
+            "Emissions fugitives",
+            "Collecte",
+            "Traitement",
+            "Incinération",
+            "Fuites",
+            "Carburant (amont/combustion)",
+            "Autre",
+            "Amortissement"
+        ],
+        "label": "Type poste"
+    },
+    {
+        "key": "Nom_poste_français",
+        "x-originalName": "Nom poste français",
+        "type": "string",
+        "x-cardinality": 71,
+        "description": "",
+        "label": "Nom poste français"
+    },
+    {
+        "key": "Nom_poste_anglais",
+        "x-originalName": "Nom poste anglais",
+        "type": "string",
+        "x-cardinality": 47,
+        "description": "",
+        "label": "Nom poste anglais"
+    },
+    {
+        "key": "Nom_poste_espagnol",
+        "x-originalName": "Nom poste espagnol",
+        "type": "string",
+        "x-cardinality": 5,
+        "description": "",
+        "label": "Nom poste espagnol"
+    },
+    {
+        "key": "Total_poste_non_décomposé",
+        "x-originalName": "Total poste non décomposé",
+        "type": "number",
+        "x-cardinality": 4657,
+        "description": "",
+        "label": "Total poste non décomposé"
+    },
+    {
+        "key": "CO2f",
+        "x-originalName": "CO2f",
+        "type": "number",
+        "x-cardinality": 1765,
+        "description": "",
+        "label": "CO2f"
+    },
+    {
+        "key": "CH4f",
+        "x-originalName": "CH4f",
+        "type": "number",
+        "x-cardinality": 959,
+        "description": "",
+        "label": "CH4f"
+    },
+    {
+        "key": "CH4b",
+        "x-originalName": "CH4b",
+        "type": "number",
+        "x-cardinality": 95,
+        "description": "",
+        "label": "CH4b"
+    },
+    {
+        "key": "N2O",
+        "x-originalName": "N2O",
+        "type": "number",
+        "x-cardinality": 700,
+        "description": "",
+        "label": "N2O"
+    },
+    {
+        "key": "Code_gaz_supplémentaire_1",
+        "x-originalName": "Code gaz supplémentaire 1",
+        "type": "string",
+        "x-cardinality": 2,
+        "description": "",
+        "label": "Code gaz supplémentaire 1"
+    },
+    {
+        "key": "Valeur_gaz_supplémentaire_1",
+        "x-originalName": "Valeur gaz supplémentaire 1",
+        "type": "number",
+        "x-cardinality": 44,
+        "description": "",
+        "label": "Valeur gaz supplémentaire 1"
+    },
+    {
+        "key": "Code_gaz_supplémentaire_2",
+        "x-originalName": "Code gaz supplémentaire 2",
+        "type": "string",
+        "x-cardinality": 1,
+        "description": "",
+        "label": "Code gaz supplémentaire 2"
+    },
+    {
+        "key": "Valeur_gaz_supplémentaire_2",
+        "x-originalName": "Valeur gaz supplémentaire 2",
+        "type": "number",
+        "x-cardinality": 13,
+        "description": "",
+        "label": "Valeur gaz supplémentaire 2"
+    },
+    {
+        "key": "Valeur_gaz_supplémentaire_3",
+        "x-originalName": "Valeur gaz supplémentaire 3",
+        "type": "boolean",
+        "x-cardinality": 1,
+        "description": "",
+        "label": "Valeur gaz supplémentaire 3"
+    },
+    {
+        "key": "Valeur_gaz_supplémentaire_4",
+        "x-originalName": "Valeur gaz supplémentaire 4",
+        "type": "boolean",
+        "x-cardinality": 1,
+        "description": "",
+        "label": "Valeur gaz supplémentaire 4"
+    },
+    {
+        "key": "Code_gaz_supplémentaire_5",
+        "x-originalName": "Code gaz supplémentaire 5",
+        "type": "string",
+        "x-cardinality": 1,
+        "description": "",
+        "label": "Code gaz supplémentaire 5"
+    },
+    {
+        "key": "Valeur_gaz_supplémentaire_5",
+        "x-originalName": "Valeur gaz supplémentaire 5",
+        "type": "boolean",
+        "x-cardinality": 1,
+        "description": "",
+        "label": "Valeur gaz supplémentaire 5"
+    },
+    {
+        "key": "Autres_GES",
+        "x-originalName": "Autres GES",
+        "type": "number",
+        "x-cardinality": 82,
+        "description": "",
+        "label": "Autres GES"
+    },
+    {
+        "key": "CO2b",
+        "x-originalName": "CO2b",
+        "type": "number",
+        "x-cardinality": 487,
+        "description": "",
+        "label": "CO2b"
+    },
+    {
+        "x-calculated": true,
+        "key": "_id",
+        "type": "string",
+        "format": "uri-reference",
+        "title": "Identifiant",
+        "description": "Identifiant unique parmi toutes les lignes du jeu de données",
+        "label": "Identifiant"
+    },
+    {
+        "x-calculated": true,
+        "key": "_i",
+        "type": "integer",
+        "title": "Numéro de ligne",
+        "description": "Indice de la ligne dans le fichier d'origine",
+        "label": "Numéro de ligne"
+    },
+    {
+        "x-calculated": true,
+        "key": "_rand",
+        "type": "integer",
+        "title": "Nombre aléatoire",
+        "description": "Un nombre aléatoire associé à la ligne qui permet d'obtenir un tri aléatoire par exemple",
+        "label": "Nombre aléatoire"
+    }
+]

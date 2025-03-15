@@ -1,8 +1,12 @@
 import requests
 
+import json
+
 
 
 url = "https://data.ademe.fr/data-fair/api/v1/datasets/base-carboner/schema"
+
+output_file = "schema_base_carbone.json"
 
 
 
@@ -14,7 +18,17 @@ try:
 
   schema = response.json() # Convertit la réponse en JSON
 
-  print(schema) # Affiche le schéma récupéré
+
+
+  # Sauvegarde dans un fichier JSON
+
+  with open(output_file, "w", encoding="utf-8") as f:
+
+    json.dump(schema, f, indent=4, ensure_ascii=False)
+
+
+
+  print(f"Schéma sauvegardé dans {output_file}")
 
 except requests.exceptions.RequestException as e:
 
